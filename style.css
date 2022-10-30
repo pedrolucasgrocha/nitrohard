@@ -1,0 +1,168 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+    font-family: 'Rustica';
+    src: url('fonts/Athena\ Rustic.ttf') format('opentype');
+}
+:root{
+    --cor01: #919191;
+    --cor02: #13214D;
+    --cor03: #101833;
+    --cor04: #000015;
+    --cor05: #000009;
+    --fonte-padrao: 'Roboto', sans-serif;
+    --fonte-leitura: 'Roboto Serif', serif;
+    --fonte-especial: 'Poppins', sans-serif;
+    --fonte-rustica: 'Rustica';
+}
+*{
+    margin:0px;
+    color: white;
+}
+body{
+    background-color: var(--cor04);
+    color: white;
+    font-family: var(--fonte-padrao);
+
+}
+header{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.397);
+    background-color: var(--cor04);
+   
+}
+header > h1{
+    font-family: var(--fonte-especial);
+    font-size: 4em;
+    text-align: center;
+    font-size: normal;
+    font-style: italic;
+    padding-top: 30px;
+    line-height: 50px;
+}
+header > p{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+nav{
+    padding: 20px;
+}
+nav > a{
+    margin-right: 50px;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1em;
+}
+nav > a:hover{
+    color: red;
+    font-weight: bold;
+    
+}
+header > h1 > mark{
+    background-color: transparent;
+    color: red;
+    
+}
+main{
+    border-left: 1px solid rgba(128, 128, 128, 0.103);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.103);
+    border-right: 1px solid rgba(128, 128, 128, 0.103);
+    border-radius: 0px 0px 10px 10px;
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--cor05);
+    
+}
+article > h2{
+    font-family: var(--fonte-especial);
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: left;
+    margin-top: 30px;
+        
+}
+article > div{
+    margin-top: 50px;
+}
+article > div >p{
+    font-weight: 200;
+    line-height: 35px;
+    font-size: 1.2em;
+    font-family: var(--fonte-leitura);
+    text-align: justify;
+    
+}
+img#carro{
+    width: 100%;
+    
+    border-top: 1px solid rgba(128, 128, 128, 0.075);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.075);
+}
+div#video{
+    background-color: #000;
+    max-width: 840px;
+    min-width: 300px;
+    position: relative;
+    padding-bottom: 57%;
+   margin: 10px -20px 20px -20px;
+}
+div#video > iframe{
+    position:absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside > h3{
+    background-color: var(--cor05);
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: 400;
+    border: 1px solid gray;
+}
+aside > h3::after{
+    content: '  \1F6E0';
+    
+}
+aside > h3::before{
+    content: ' \1F6E0\00A0\00A0';
+    
+}
+aside > ul{
+    background-color: var(--cor05);
+    padding: 20px;
+    list-style-position: inside;
+    line-height: 30px;
+    columns: 2;
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid gray;
+    list-style-type: '\1F527\00A0\00A0';
+}
+footer{
+    padding: 20px;
+    text-align: center;
+}
+
+footer > p > a>mark{
+    background-color: transparent;
+    color: red;
+    
+}
+footer > p > a{
+    background-color: transparent;
+    color: white;
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: none;
+    font-family: var(--fonte-especial);
+}
+footer > p > a:hover{
+    color: red;
+    font-weight: bolder;
+}
